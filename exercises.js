@@ -50,7 +50,24 @@ function expect(target) {
   if (status.hungry === undefined) {
     status = {};
   };
-  
+  var Human = function undefined(target) {
+    this.cool = true;
+    if (target === undefined){
+      target = {};
+    }
+    if (target.cool === undefined){
+      this.cool =false;
+    }
+  };
+  Human.prototype.pet = function (dog) {
+    dog.status = 'happy';
+  };
+  Human.prototype.feed = function (dog){
+    Dog.hungry = false;
+  };
+  Human.prototype.owner = function () {
+    Dog.owner = Human;
+  };
   
   
 // ????????
