@@ -37,6 +37,22 @@ function expect(target) {
 // 
 // Only add code to *THIS* section!
 
+  var Dog = function(status){
+  this.status = 'normal';
+  this.color = 'black';
+  this.hungry = false;
+  this.owner = null;
+  
+  if (status === undefined){
+    status = {};
+  };
+  
+  if (status.hungry === undefined) {
+    status = {};
+  };
+  
+  
+  
 // ????????
 // ????????
 // ????????
